@@ -20,16 +20,17 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              margin: EdgeInsets.only(bottom: 15),
-              width: 110,
-              height: 110,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.grey,
+            SizedBox(
+              child: CircleAvatar(
+                radius: 40.0,
+                backgroundColor: Colors.white,
+                child: CircleAvatar(
+                  radius: 38.0,
+                  backgroundImage: NetworkImage(
+                      'https://github.com/maulllanamm/Mobile-programing/blob/main/Tugas2/photoprofile.jpg'),
+                ),
               ),
             ),
-
             //Teks
             Text(
               'Maulana Muhammad',
@@ -39,10 +40,18 @@ class Home extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+
+            Text(
+              'Mobile Programming',
+              style: TextStyle(
+                fontSize: 22,
+                color: Colors.white60,
+              ),
+            ),
             //Kotak
             Container(
               padding: EdgeInsets.symmetric(horizontal: 20),
-              margin: EdgeInsets.symmetric(horizontal: 24),
+              margin: EdgeInsets.symmetric(horizontal: 24, vertical: 20),
               width: MediaQuery.of(context).size.width,
               height: 50,
               decoration: BoxDecoration(
