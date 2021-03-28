@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
               child: Row(
                 children: [
                   Icon(
-                    Icons.help,
+                    Icons.call,
                     color: Colors.grey,
                     size: 25,
                   ),
